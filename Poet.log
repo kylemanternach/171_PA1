@@ -1,0 +1,27 @@
+#1   SEND -> Poet  [0, 0, 0]  remaining=3  FIRST REQUEST  poet_clock=[0, 0, 0]
+#2   SEND -> Poet  [0, 0, 0]  remaining=4  SECOND REQUEST  poet_clock=[0, 0, 0]
+#3   SEND -> Poet  [0, 0, 0]  remaining=5  THIRD REQUEST  poet_clock=[0, 0, 0]
+#4   RECV -> Love  [0, 0, 1]  remaining=4  THIRD Forever  poet_clock=[0, 0, 0]
+#4   OUTPUT  Love  [0, 0, 1]   THIRD Forever    poet_clock=[0, 0, 0]      held=False
+#5   RECV -> Sad  [0, 1, 0]  remaining=3  SECOND Grief  poet_clock=[0, 0, 1]
+#5   OUTPUT  Sad  [0, 1, 0]   SECOND Grief    poet_clock=[0, 0, 1]      held=False
+#6   RECV -> Happy  [2, 0, 1]  remaining=3  THIRD Golden laughter  poet_clock=[0, 1, 1]
+#7   RECV -> Happy  [1, 0, 0]  remaining=2  FIRST Sunlight  poet_clock=[0, 1, 1]
+#7   OUTPUT  Happy  [1, 0, 0]   FIRST Sunlight    poet_clock=[0, 1, 1]      held=False
+#7   OUTPUT  Happy  [2, 0, 1]   THIRD Golden laughter    poet_clock=[2, 1, 1]      held=True
+#8   RECV -> Love  [1, 0, 2]  remaining=1  FIRST My heart  poet_clock=[2, 1, 1]
+#8   OUTPUT  Love  [1, 0, 2]   FIRST My heart    poet_clock=[2, 1, 1]      held=False
+#9   RECV -> Love  [1, 1, 3]  remaining=2  SECOND Endless embrace  poet_clock=[2, 1, 2]
+#9   OUTPUT  Love  [1, 1, 3]   SECOND Endless embrace    poet_clock=[2, 1, 2]      held=False
+#10   RECV -> Sad  [2, 2, 1]  remaining=2  THIRD Fading autumn tears  poet_clock=[2, 1, 3]
+#10   OUTPUT  Sad  [2, 2, 1]   THIRD Fading autumn tears    poet_clock=[2, 1, 3]      held=False
+#11   RECV -> Happy  [3, 0, 2]  remaining=0  FIRST Dancing bright sunbeams  poet_clock=[2, 2, 3]
+#11   OUTPUT  Happy  [3, 0, 2]   FIRST Dancing bright sunbeams    poet_clock=[2, 2, 3]      held=False
+#12   RECV -> Sad  [2, 3, 3]  remaining=1  SECOND Empty quiet rooms  poet_clock=[3, 2, 3]
+#12   OUTPUT  Sad  [2, 3, 3]   SECOND Empty quiet rooms    poet_clock=[3, 2, 3]      held=False
+#13   RECV -> Happy  [4, 2, 4]  remaining=0  THIRD Birds sing sweet joyful songs  poet_clock=[3, 3, 3]
+#14   RECV -> Love  [2, 2, 4]  remaining=1  THIRD You are my home  poet_clock=[3, 3, 3]
+#14   OUTPUT  Love  [2, 2, 4]   THIRD You are my home    poet_clock=[3, 3, 3]      held=False
+#14   OUTPUT  Happy  [4, 2, 4]   THIRD Birds sing sweet joyful songs    poet_clock=[4, 3, 4]      held=True
+#15   RECV -> Happy  [5, 3, 4]  remaining=0  SECOND Joyful morning sunshine smiles  poet_clock=[4, 3, 4]
+#15   OUTPUT  Happy  [5, 3, 4]   SECOND Joyful morning sunshine smiles    poet_clock=[4, 3, 4]      held=False

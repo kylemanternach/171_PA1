@@ -24,3 +24,7 @@ def happens_before(v, w):
 
 def concurrent(v, w):
     return not leq(v, w) and not leq(w, v)
+
+def happens_next(v, w):
+    ahead = [b - a for a, b in zip(v, w) if b > a]
+    return ahead == [1]

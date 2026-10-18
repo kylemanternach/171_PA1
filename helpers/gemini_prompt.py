@@ -11,9 +11,8 @@ chat = client.chats.create(
 )
 
 def generate_verse(length, mood):
-    prompt = f"Give me {length} word of a poem in a {mood} mood."
-    return chat.send_message(prompt)
+    prompt = f"Give me {length} word of a poem in a {mood} mood. No punctuation at the end."
+    return chat.send_message(prompt).text
 
-response = generate_verse(2, "sad")
-
-print(response.text)
+# Agents call generate_verse when a line is needed. Running it here
+# would call the API on import.

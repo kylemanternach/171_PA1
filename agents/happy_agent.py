@@ -1,24 +1,27 @@
-import socket
-import threading
-import vector_clock
+# happy_node
+from node_components.agent_node import AgentNode
+import asyncio
 
-HOST = '127.0.0.1'
+LOCALHOST = "127.0.0.1"
+PORT = 5001
 
-HOST = "127.0.0.1"
-PORT = 5000
-NUM_AGENTS = 3
+AGENTS = {
+    "Poet": 5050,
+    "Sad": 5002,
+    "Love": 5003
+}
 
-agents = {}
-agents_lock = threading.Lock()
+async def main():
+    # Name is the Gemini mood. The last argument is this agent's vector-clock index.
+    node = AgentNode("Happy", LOCALHOST, PORT, 0)
 
-def handle_incoming(conn):
+    await node.start_node(AGENTS)
+
+    # Start listening for incoming agent connections.
+    asyncio.create_task(node.accept_connection())
+    await asyncio.Future()
 
 
-def main(port):
-    server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server.bind((HOST, port))
-    server.listen(1)
-
-    
-    while True:
-        conn, addr = server.accept()
+if __name__ == "__main__":
+    open("Happy.log", "w").close()
+    asyncio.run(main())
