@@ -3,7 +3,6 @@ from node_components.poet_node import PoetNode
 import asyncio
 
 LOCALHOST = "127.0.0.1"
-# 5000 is taken by macOS AirPlay (Control Center), so the poet listens here instead.
 PORT = 5050
 
 AGENTS = {
@@ -17,7 +16,7 @@ async def main():
 
     await node.start_node(AGENTS)
     # Peers are connected now. Each number is how many lines that stream still has to write.
-    node.kickoff([3, 4, 5])
+    node.kickoff([2, 2, 2])
 
     # Start listening for incoming agent connections.
     asyncio.create_task(node.accept_connection())

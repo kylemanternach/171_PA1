@@ -16,6 +16,9 @@ class vector_clock:
         self.V = [max(a, b) for a, b in zip(self.V, other)]
         self.tick()
 
+    def __str__(self):
+        return str(self.V)
+
 def leq(v, w):
     return all(a <= b for a, b in zip(v, w))
 

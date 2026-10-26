@@ -27,6 +27,7 @@ class PoetNode(Node):
 
     async def output_line(self, data, held):
         """Output message to poem.txt and log output in poet.log."""
+        self.message_count += 1
         with open("poet.txt", "a") as file:
             file.write(
                 f"{data["stream_num"] + " " + data["content"]: <40}{data["clk"]: >20}\n"

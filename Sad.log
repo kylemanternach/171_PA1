@@ -1,9 +1,3 @@
-#1   RECV -> Poet  [0, 0, 0]  remaining=4  SECOND REQUEST  poet_clock=<helpers.vector_clock.vector_clock object at 0x107c9dfd0>
-#2   SEND -> Sad  [0, 1, 0]  remaining=3  SECOND Grief  poet_clock=<helpers.vector_clock.vector_clock object at 0x107c9dfd0>
-#3   SEND -> Sad  [0, 1, 0]  remaining=3  SECOND Grief  poet_clock=<helpers.vector_clock.vector_clock object at 0x107c9dfd0>
-#4   RECV -> Happy  [2, 0, 1]  remaining=3  THIRD Golden laughter  poet_clock=<helpers.vector_clock.vector_clock object at 0x107c9dfd0>
-#5   SEND -> Sad  [2, 2, 1]  remaining=2  THIRD Fading autumn tears  poet_clock=<helpers.vector_clock.vector_clock object at 0x107c9dfd0>
-#6   SEND -> Sad  [2, 2, 1]  remaining=2  THIRD Fading autumn tears  poet_clock=<helpers.vector_clock.vector_clock object at 0x107c9dfd0>
-#7   RECV -> Love  [1, 1, 3]  remaining=2  SECOND Endless embrace  poet_clock=<helpers.vector_clock.vector_clock object at 0x107c9dfd0>
-#8   SEND -> Sad  [2, 3, 3]  remaining=1  SECOND Empty quiet rooms  poet_clock=<helpers.vector_clock.vector_clock object at 0x107c9dfd0>
-#9   SEND -> Sad  [2, 3, 3]  remaining=1  SECOND Empty quiet rooms  poet_clock=<helpers.vector_clock.vector_clock object at 0x107c9dfd0>
+#1   RECV -> Poet  [0, 0, 0]  remaining=2  SECOND REQUEST  poet_clock=[0, 0, 0]
+#2   SEND -> Sad  [0, 1, 0]  remaining=1  SECOND Grief  poet_clock=[0, 1, 0]
+#3   SEND -> Sad  [0, 1, 0]  remaining=1  SECOND Grief  poet_clock=[0, 1, 0]
